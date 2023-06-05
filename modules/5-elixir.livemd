@@ -223,7 +223,10 @@ user_input = "some_string_which_obviously_isnt_the_same_as_the_password"
 :ok
 # DO NOT EDIT ANY CODE ABOVE THIS LINE =====================
 
-if SecurityCheck.validate(user_input, password) or raise(SecurityCheck) do :you_let_a_baddie_in end
+if SecurityCheck.validate(user_input, password) or raise(SecurityCheck) do
+  :you_let_a_baddie_in
+end
+
 # if SecurityCheck.validate(user_input, password) || raise(SecurityCheck) do :you_let_a_baddie_in end
 ```
 
