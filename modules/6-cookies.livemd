@@ -188,8 +188,8 @@ conn
   <<42::16>>,
   domain: "www.example.com
   path: "/",
-  secure: "True",
-  http_only: "True",
+  secure: true,
+  http_only: true,
   same_site: "Strict"
 )
 ```
