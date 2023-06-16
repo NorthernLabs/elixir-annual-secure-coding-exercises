@@ -6,8 +6,7 @@ Mix.install([
   :bcrypt_elixir,
   :httpoison,
   {:absinthe, "~> 1.7.0"},
-  {:phoenix, "~> 1.0"},
-  {:plug, "~> 1.14.2"}
+  {:phoenix, "~> 1.7.5"}
 ])
 
 md5_hash = :crypto.hash(:md5, "users_password")
@@ -252,7 +251,7 @@ _HINT: Installed dependencies can be found at the very top, it was the very firs
 
 ```elixir
 # CHANGE ME
-vulnerable_dependency = :plug
+vulnerable_dependency = :phoenix
 
 # DO NOT CHANGE CODE BELOW THIS LINE ============================
 Application.spec(vulnerable_dependency)[:vsn] |> List.to_string() |> IO.puts()
